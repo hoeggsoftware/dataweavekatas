@@ -14,6 +14,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="2bded5ce-1d9c-4125-a4e0-9479f7aee19c" name="exercise2Flow"/>
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="b4ad10f5-a9a6-4599-a270-66d0e2e2eba5" expression="#[payload]" is="#[MunitTools::equalTo(0)]"/>
 		</munit:validation>
 	</munit:test>
@@ -23,6 +28,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="bb9528f9-50a6-4482-986c-b89ee3cd51fb" name="exercise2Flow"/>
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="a3bf8b46-00aa-4e6c-8a50-688238109eab" expression="#[payload]" is="#[MunitTools::equalTo(0)]"/>
 		</munit:validation>
 	</munit:test>
@@ -32,6 +42,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="43b243f2-4f22-4a66-bb8b-d3c48d7a0ec8" name="exercise2Flow"/>
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="a3bf8b46-00aa-4e6c-8a50-688238109eab" expression="#[payload]" is="#[MunitTools::equalTo(0)]" />
 		</munit:validation>
 	</munit:test>
@@ -41,6 +56,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="048324a8-c1c6-4933-b760-45aef0d6e4c7" name="exercise2Flow"/>
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="5d776ba5-76b3-4929-8cd8-e8379f852d8f" expression="#[payload]" is="#[MunitTools::equalTo(1)]"/>
 		</munit:validation>
 	</munit:test>
@@ -50,6 +70,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="e45734bd-2943-48af-aa8e-e5bccc102686" name="exercise2Flow"/>
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="97b893a3-b9b8-4dc9-9604-e58e367a38ea" expression="#[payload]" is="#[MunitTools::equalTo(2)]"/>
 		</munit:validation>
 	</munit:test>
@@ -59,7 +84,12 @@
 				<flow-ref doc:name="exercise2Flow" doc:id="b18edfdb-3003-4fdc-9792-32ea6c54880d" name="exercise2Flow" />
 			</munit:execution>
 			<munit:validation>
-				<munit-tools:assert-that doc:name="Assert that" doc:id="49a8703e-b32a-4242-8b35-38e13c8b0ae0" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
+				<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="49a8703e-b32a-4242-8b35-38e13c8b0ae0" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
 			</munit:validation>
 		</munit:test>
 	<munit:test name="test_small_distance" description="MUnit Test" doc:id="11b2fe07-aa6b-4eb7-abad-4b5f771e2107" ignore="true">
@@ -68,7 +98,12 @@
 				<flow-ref doc:name="exercise2Flow" doc:id="f9eb683c-a964-4b5c-8771-cfcc6402ad61" name="exercise2Flow" />
 			</munit:execution>
 			<munit:validation>
-				<munit-tools:assert-that doc:name="Assert that" doc:id="80a574b1-1340-41d8-97c4-ca87f23c39fd" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
+				<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="80a574b1-1340-41d8-97c4-ca87f23c39fd" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
 			</munit:validation>
 		</munit:test>
 	<munit:test name="test_small_distance_in_long_strands" description="MUnit Test" doc:id="d2dc7afb-766a-4241-9b75-e343962141ca" ignore="true">
@@ -77,6 +112,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="398d263c-a6a4-4955-b173-1e03945f0a1a" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="110bdd03-7793-48e5-b77b-6da9d80c1a30" expression="#[payload]" is="#[MunitTools::equalTo(2)]" />
 		</munit:validation>
 	</munit:test>
@@ -86,6 +126,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="41f5417b-9908-41ee-bf09-d2552eb4e1f9" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="0301e80a-1529-4b37-aff8-8a83675b7f84" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
 		</munit:validation>
 	</munit:test>
@@ -95,6 +140,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="88a21b46-1b61-427d-bf3e-62b83d7f89ab" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="c1b75526-d34f-4a1f-8576-d763860be2c7" expression="#[payload]" is="#[MunitTools::equalTo(1)]" />
 		</munit:validation>
 	</munit:test>
@@ -104,6 +154,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="fee55b1e-de84-4639-8637-b51633ad87d5" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="f4ca3b92-67cc-49d6-bc39-5639bd7190f9" expression="#[payload]" is="#[MunitTools::equalTo(2)]" />
 		</munit:validation>
 	</munit:test>
@@ -113,6 +168,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="b95d04af-7ba3-4454-bdb6-1cc521ee3048" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="efd05e6e-b91a-432f-a361-fcf93d6fa854" expression="#[payload]" is="#[MunitTools::equalTo(4)]" />
 		</munit:validation>
 	</munit:test>
@@ -122,6 +182,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="7611fe31-114d-4dd2-aaeb-5d050f4b023d" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="2a93fce2-d0c0-4d48-91b2-a48d9abeab40" expression="#[payload]" is="#[MunitTools::equalTo(9)]" />
 		</munit:validation>
 	</munit:test>
@@ -131,7 +196,12 @@
 				<flow-ref doc:name="exercise2Flow" doc:id="bd7ca2d1-abfb-4527-a4b5-4ca6bdc70c7c" name="exercise2Flow" />
 			</munit:execution>
 			<munit:validation>
-				<munit-tools:assert-that doc:name="Assert that" doc:id="0a84e822-6f25-4a91-a67b-84dbd3b66197" expression="#[payload]" is="#[MunitTools::equalTo('Argument Error')]" />
+				<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="0a84e822-6f25-4a91-a67b-84dbd3b66197" expression="#[payload]" is="#[MunitTools::equalTo('Argument Error')]" />
 			</munit:validation>
 		</munit:test>
 	<munit:test name="test_disallow_first_strand_longer" description="MUnit Test" doc:id="62c0a1de-129e-4b53-ba11-de7eaa6af59f" ignore="true">
@@ -140,6 +210,11 @@
 			<flow-ref doc:name="exercise2Flow" doc:id="b7dee680-4313-40fc-b440-ade0ca24fba5" name="exercise2Flow" />
 		</munit:execution>
 		<munit:validation>
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes>
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0a8613a3-cdc8-457e-9c56-0407fdf9c29b']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="721cd425-7443-43fb-b6bf-8c896c43ac64" expression="#[payload]" is="#[MunitTools::equalTo('Argument Error')]"/>
 		</munit:validation>
 	</munit:test>

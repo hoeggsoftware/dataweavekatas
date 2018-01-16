@@ -15,7 +15,7 @@
                     <munit-tools:with-attribute attributeName="doc:id" whereValue="#['0450ae36-0b33-47da-8ee7-24bb7f32474f']" />
                 </munit-tools:with-attributes>
                 <munit-tools:before-call >
-                   <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::nullValue()]"/>
+                   <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::nullValue()]" doc:name="Assert that"/>
                 </munit-tools:before-call>
                 <munit-tools:after-call >
                     <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::notNullValue()]" doc:name="Assert that"/>
