@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="new-test-suite.xml" />
+	<munit:test name="exercise1FlowTest" description="Test" doc:id="eb234db0-9c34-465a-94da-794f76206f16" >
+	<munit:behavior >
+            <munit-tools:spy processor="ee:transform" doc:name="Spy" doc:id="d9af68bf-0cfc-4001-ada1-c0a4a5204d35" >
+                <munit-tools:with-attributes >
+                    <munit-tools:with-attribute attributeName="doc:id" whereValue="#['0450ae36-0b33-47da-8ee7-24bb7f32474f']" />
+                </munit-tools:with-attributes>
+                <munit-tools:before-call >
+                   <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::nullValue()]"/>
+                </munit-tools:before-call>
+                <munit-tools:after-call >
+                    <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::notNullValue()]" doc:name="Assert that"/>
+                 </munit-tools:after-call>
+            </munit-tools:spy>
+        </munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="exercise1Flow" doc:id="c9764ace-2859-444c-805e-13cb3bfad3c3" name="exercise1Flow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="2425ffc1-328d-46af-baed-6e09ae73cec7" processor="ee:transform" times="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0450ae36-0b33-47da-8ee7-24bb7f32474f']" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="0782cf71-d001-49d8-8781-d2dbf60d8a15" expression="#[payload]" is="#[MunitTools::equalTo('Hello World')]" message="Oops!"/>
+		</munit:validation>
+	</munit:test>
+
+</mule>
