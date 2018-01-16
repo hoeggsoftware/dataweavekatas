@@ -5,12 +5,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<flow name="exercise1Flow" doc:id="0aa12d39-598a-49de-a217-bcda8948c4fe" >
-		<ee:transform doc:name="Transform Message" doc:id="0450ae36-0b33-47da-8ee7-24bb7f32474f" >
+		<ee:transform doc:name="Hello, World!" doc:id="0450ae36-0b33-47da-8ee7-24bb7f32474f" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/java
 ---
-'Hello World']]></ee:set-payload>
+{
+}]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>

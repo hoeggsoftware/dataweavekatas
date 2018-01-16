@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<flow name="exercise2Flow" doc:id="799ea2dd-a280-4e1a-92d4-fe058c290978" >
-		<ee:transform doc:name="Transform Message" doc:id="0a8613a3-cdc8-457e-9c56-0407fdf9c29b" >
+		<ee:transform doc:name="Hamming" doc:id="0a8613a3-cdc8-457e-9c56-0407fdf9c29b" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/java

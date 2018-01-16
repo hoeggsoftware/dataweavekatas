@@ -31,7 +31,7 @@
 					<munit-tools:with-attribute attributeName="doc:id" whereValue="#['0450ae36-0b33-47da-8ee7-24bb7f32474f']" />
 				</munit-tools:with-attributes>
 			</munit-tools:verify-call>
-			<munit-tools:assert-that doc:name="Assert that" doc:id="0782cf71-d001-49d8-8781-d2dbf60d8a15" expression="#[payload]" is="#[MunitTools::equalTo('Hello World')]" message="Oops!"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="0782cf71-d001-49d8-8781-d2dbf60d8a15" expression="#[payload]" is="#[MunitTools::equalTo('Hello, World!')]" message="Oops!"/>
 		</munit:validation>
 	</munit:test>
 
